@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 def load_data_file(file_path):
@@ -46,6 +47,14 @@ def make_visualizations(data, columns):
 
                 plt.tight_layout()
                 plt.show()
+
+
+                sns.catplot(1,3,4)
+                sns.title(f'catplot of {col}')
+                sns.ylabel(col)
+                sns.show()
+
+
 
             else:
                 print(
